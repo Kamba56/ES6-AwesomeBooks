@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.book-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.book-div:nth-child(odd) {
+  background: #dbdbdb;
+}
+
+button {
+  width: fit-content;
+  padding: 8px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 3px;
+  box-shadow: 4px 5px 2px #000;
+  font-family: inherit;
+}
+
+#add-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+#add-form input {
+  height: 40px;
+  padding-left: 15px;
+  border: 2px solid #000;
+}
+
+#add-form button {
+  align-self: flex-end;
+}
+
+.border {
+  border: 4px solid #000;
+  margin: 20px;
+}
+
+/* Navigation styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav {
+  width: fit-content;
+}
+
+#logo {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: fit-content;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 5px 15px;
+  border-right: 2px solid #000;
+  transition: color 1s 1ms;
+}
+
+nav ul li:last-child a {
+  border-right: none;
+}
+
+.active {
+  color: blue;
+}
+
+nav ul li a:hover {
+  color: blue;
+}
+
+#todays-date {
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* Contact section styling */
+
+#contact div {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+#contact div ul {
+  margin: 30px;
+}
+
+#form-section,
+#contact {
+  display: none;
+}
+
+#empty-list {
+  text-align: center;
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* footer styling */
+footer {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+}

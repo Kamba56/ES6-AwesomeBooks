@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <!-- *My styles -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header class="border">
+    <a href="#" id="logo">Awesome Books</a>
+    <nav>
+      <ul>
+        <li>
+          <a id="book-link" href="#" class="active">Book list</a>
+        </li>
+        <li>
+          <a id="form-link" href="#">Add new</a>
+        </li>
+        <li>
+          <a id="contact-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="todays-date">March 14</div>
+
+  <main>
+    <section id="book-list">
+      <h1>All Awesome Books</h1>
+      <div class="book-section border">
+
+      </div>
+      <p id="empty-list">No books available. Click on Add book link to add new book</p>
+    </section>
+
+    <section id="form-section">
+      <h1>Add a new book</h1>
+      <form action="#" id="add-form">
+        <input type="text" name="title" placeholder="Title" id="title" required><br>
+        <input type="text" name="author" placeholder="Author" id="author" required><br>
+        <button type="submit" id="add-button">Add</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h1>Contact information</h1>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi velit obcaecati saepe doloremque, minus adipisci assumenda.</p>
+        <ul>
+          <li>our email: abcd@gmail.com</li>
+          <li>Our phone number: +23412345678</li>
+          <li>Our address: abuja, Nigeria</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border">
+    <p>Copyright Toma 2022</p>
+  </footer>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
