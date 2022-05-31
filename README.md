@@ -13,20 +13,15 @@
 
 ## Live Demo
 
-[Live Demo Link](https://kamba56.github.io/First-Capstone/)
-
-## Video link
-
-[Loom video link](https://www.loom.com/share/b17f7ee5ecef49789e0583abfd8b6e02)
-
+[Live Demo Link](https://kamba56.github.io/ES6-AwesomeBooks/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-1. Go to the [repository page](https://github.com/Kamba56/First-Capstone).
+1. Go to the [repository page](https://github.com/Kamba56/ES6-AwesomeBooks).
 2. Press the "Code" button and copy the link.
-3. Clone it using git command `git clone <https://github.com/Kamba56/First-Capstone.git>`.
+3. Clone it using git command `git clone <https://github.com/Kamba56/ES6-AwesomeBooks.git>`.
 
 
 ## Authors

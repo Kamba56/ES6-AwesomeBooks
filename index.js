@@ -1,8 +1,8 @@
 import navFunction from './modules/navigation.js';
 import BooksTemplate from './modules/books.js';
-import { form, bookSection, currentDate } from './modules/elements.js';
+import { form, bookSection } from './modules/elements.js';
 import generateBooks from './modules/dynamicList.js';
-import { DateTime } from './modules/luxon.js';
+import setDate from './modules/dateTime.js';
 
 // Nav functionality
 navFunction();
@@ -29,10 +29,4 @@ bookSection.addEventListener('click', (e) => {
 bookObj.books.forEach(generateBooks);
 
 // Date time
-const time = DateTime.now();
-const setDate = (time) => {
-  setInterval(() => {
-    currentDate.innerHTML = time.toLocaleString(DateTime.DATETIME_MED);
-  }, 1000);
-};
-setDate(time);
+setDate();
