@@ -1,7 +1,6 @@
 import {
   bookListSection, formSection, contactSection, formLink, bookLink, contactLink,
 } from './elements.js';
-import isEmpty from './emptyList.js';
 
 const navFunction = () => {
   bookLink.addEventListener('click', (e) => {
@@ -9,7 +8,6 @@ const navFunction = () => {
     bookListSection.style.display = 'block';
     formSection.style.display = 'none';
     contactSection.style.display = 'none';
-    isEmpty();
     bookLink.classList.add('active');
     formLink.classList.remove('active');
     contactLink.classList.remove('active');

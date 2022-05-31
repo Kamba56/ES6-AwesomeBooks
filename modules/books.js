@@ -1,11 +1,14 @@
 import generateBooks from './dynamicList.js';
-import { form } from './elements.js';
+import { form, emptyList } from './elements.js';
 
 export default class BooksTemplate {
   constructor() {
     this.books = [];
-    if (localStorage.getItem('books')) {
+    if (JSON.parse(localStorage.getItem('books'))) {
       this.books = JSON.parse(localStorage.getItem('books'));
+    }
+    if (this.books.length === 0) {
+      emptyList.style.display = 'block';
     }
   }
 
@@ -18,6 +21,7 @@ export default class BooksTemplate {
     };
     this.books.push(book);
     localStorage.setItem('books', JSON.stringify(this.books));
+    emptyList.style.display = 'none';
     generateBooks(book);
   }
 
@@ -26,5 +30,8 @@ export default class BooksTemplate {
     this.books = this.books.filter((book) => book.id !== Number(removedBotton.id));
     localStorage.setItem('books', JSON.stringify(this.books));
     removedBook.remove();
+    if (this.books.length === 0) {
+      emptyList.style.display = 'block';
+    }
   }
 }
