@@ -1,0 +1,10 @@
+export const form = document.querySelector('#add-form');
+export const bookSection = document.querySelector('.book-section');
+export const bookListSection = document.querySelector('#book-list');
+export const formSection = document.querySelector('#form-section');
+export const contactSection = document.querySelector('#contact');
+export const formLink = document.querySelector('#form-link');
+export const bookLink = document.querySelector('#book-link');
+export const contactLink = document.querySelector('#contact-link');
+export const currentDate = document.querySelector('#todays-date');
+export const emptyList = document.querySelector('#empty-list');
